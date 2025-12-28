@@ -1,0 +1,61 @@
+.admin-orders-container {
+    padding: 1rem;
+}
+
+.orders-title {
+    margin-bottom: 2rem;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--color-card-bg);
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.orders-table th {
+    background-color: rgba(255, 255, 255, 0.05);
+    font-weight: bold;
+}
+
+.orders-table tr:last-child td {
+    border-bottom: none;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status-confirmed {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: #4dff4d;
+}
+
+.status-pending {
+    background-color: rgba(255, 255, 0, 0.2);
+    color: #ffff4d;
+}
+
+.status-cancelled {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ff4d4d;
+}
+
+.view-details-btn {
+    font-size: 1.2rem;
+    padding: 5px;
+}

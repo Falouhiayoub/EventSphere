@@ -1,0 +1,53 @@
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: var(--color-card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+}
+
+.contact-success {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-success h3 {
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.contact-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    color: white;
+}
+
+.contact-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+    color: white;
+    font-family: inherit;
+}
+
+.contact-btn {
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+.footer {
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-text {
+    color: var(--color-text-muted);
+}
+
+.footer-brand {
+    color: var(--color-primary);
+}
