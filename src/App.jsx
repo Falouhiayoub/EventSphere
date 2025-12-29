@@ -1,11 +1,13 @@
 import React from 'react'
-import AdminLayout from './components/layout/AdminLayout'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AdminDashboard from './pages/AdminDashboard'
 
 const App = () => {
   return (
     <BrowserRouter>
-        <AdminLayout/>
+        <Routes>
+          <Route path='/admin/dashboard' element = {<AdminDashboard/>}/>
+        </Routes>
     </BrowserRouter>
   )
 }
