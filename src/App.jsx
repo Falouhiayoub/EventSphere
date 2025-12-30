@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AdminDashboard from './pages/AdminDashboard'
 import Events from './pages/Events'
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 import './index.css'
 
 const App = () => {
@@ -12,6 +13,8 @@ const App = () => {
           <Route path='/admin/dashboard' element = {<AdminDashboard/>}/>
           <Route path='/events' element= {<Events/>}/>
           <Route path= '/cart' element = {<Cart/>}/>
+          <Route path="/checkout" element={<Checkout />} />
+
         </Routes>
   )
 }
