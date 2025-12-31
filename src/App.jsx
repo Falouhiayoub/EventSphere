@@ -8,6 +8,7 @@ import Checkout from './pages/Checkout'
 import AdminLogin from './pages/AdminLogin'
 import AdminOrders from './pages/AdminOrders'
 import './index.css'
+import Home from './pages/Home'
 
 
 // Protected Route 
@@ -20,6 +21,7 @@ const App = () => {
     
         <Routes>
           {/* user Routes */}
+          <Route index element = {<Home/>}/>
           <Route path='/events' element= {<Events/>}/>
           <Route path= '/cart' element = {<Cart/>}/>
           <Route path="/checkout" element={<Checkout />} />
