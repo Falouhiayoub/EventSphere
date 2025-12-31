@@ -1,14 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import AdminDashboard from './pages/AdminDashboard'
-import Events from './pages/Events'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import AdminLayout from './components/layout/AdminLayout'
+import AdminDashboard from './pages/AdminDashboard'
+import AdminOrders from './pages/AdminOrders'
+import AdminLogin from './pages/AdminLogin'
+import Events from './pages/Events'
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
-import AdminLogin from './pages/AdminLogin'
-import AdminOrders from './pages/AdminOrders'
-import './index.css'
+import Layout from './components/layout/Layout'
 import Home from './pages/Home'
+import Contact from './pages/Contact'
+import './index.css'
 
 
 // Protected Route 
@@ -21,10 +23,12 @@ const App = () => {
     
         <Routes>
           {/* user Routes */}
+          <Route path='/' element = {<Layout/>}/>
           <Route index element = {<Home/>}/>
           <Route path='/events' element= {<Events/>}/>
           <Route path= '/cart' element = {<Cart/>}/>
           <Route path="/checkout" element={<Checkout />} />
+          <Route path='/contact' element = {<Contact/>}/>
 
           {/* admin Routes */}
           <Route path='/admin' element = {<AdminLogin/>}/>
